@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a40a5d27-8a44-4186-bffa-c989d31d45f7" name="spark_hive">
+        <fileTransfer accessType="SFTP" host="192.168.0.3" port="22" sshConfigId="07c18f43-2680-414e-9fbf-cdcfb77637e1" sshConfig="damon@192.168.0.3:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

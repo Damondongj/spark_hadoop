@@ -17,11 +17,16 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
+<!--    <property>-->
+<!--        &lt;!&ndash;指定 namenode 的 hdfs 协议文件系统的通信地址&ndash;&gt;-->
+<!--        <name>fs.defaultFS</name>-->
+<!--        <value>hdfs://192.168.0.3</value>-->
+<!--    </property>-->
     <property>
-        <!--指定 namenode 的 hdfs 协议文件系统的通信地址-->
-        <name>fs.defaultFS</name>
+        <name>fs.default.name</name>
         <value>hdfs://192.168.0.3:8020</value>
     </property>
+
     <property>
         <!--指定 hadoop 存储临时文件的目录-->
         <name>hadoop.tmp.dir</name>
