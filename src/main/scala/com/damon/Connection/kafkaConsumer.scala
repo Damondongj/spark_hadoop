@@ -23,7 +23,7 @@ object kafkaConsumer {
 
     val topic = "ads_logs"
 
-    KafkaUtils.createDirectStream[String, String](
+    val kafkaDStream = KafkaUtils.createDirectStream[String, String](
       ssc,
       LocationStrategies.PreferConsistent, // 标配. 只要 kafka 和 spark 没有部署在一台设备就应该是这个参数
       ConsumerStrategies.Subscribe[String, String](Array(topic), kafkaParam))
