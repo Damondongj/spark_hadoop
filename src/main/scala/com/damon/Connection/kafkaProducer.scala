@@ -6,7 +6,7 @@ import java.util.Properties
 object kafkaProducer {
   def main(args: Array[String]): Unit = {
     val prop = new Properties()
-    prop.put("bootstrap.servers", "192.168.0.3:9092")
+    prop.put("bootstrap.servers", "localhost:9092")
     // 等待所有副本节点的应答
     prop.put("acks", "1")
     // 重试最大次数
@@ -25,7 +25,7 @@ object kafkaProducer {
 
     val producer: KafkaProducer[String, String] = new KafkaProducer[String, String](prop)
 
-    val topic = "ads_logs"
+    val topic = "ads_logs_bak"
 
     val a = 0
 
